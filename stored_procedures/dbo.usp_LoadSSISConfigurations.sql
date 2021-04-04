@@ -27,6 +27,8 @@ Ver      Date        Author           Description
 1.1		 03/23/2021  UUDO		   1. Added conn_DFNB3 connection configuration
 1.2 	 03/24/2021  UUDO		   1. Added LoadDFNB3_uu configuration
 1.3 	 03/26/2021  UUDO		   1. Added LoadEXM_uu configuration
+1.4 	 03/27/2021  UUDO		   1. Added LoadNAISCodeHierDim_uu configuration
+
 
 
 
@@ -211,6 +213,25 @@ SELECT c.*
          , 'String'
           );
 
+-- (3.4) LoadNAISCodeHierDim_uu
+		
+    DELETE FROM dbo.[SSIS Configurations]
+     WHERE ConfigurationFilter = 'LoadNAISCodeHierDim_uu';
+	
+
+	-- 3.4.1) v_data_share_root
+
+    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
+                                        , ConfiguredValue
+                                        , PackagePath
+                                        , ConfiguredValueType)
+    VALUES
+          (
+           'LoadNAISCodeHierDim_uu'
+		 , 'C:\LDSBC\IT243\repos\DFNB_dw_uu\xls.files\'
+         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
+         , 'String'
+          );
 
 END;
 
