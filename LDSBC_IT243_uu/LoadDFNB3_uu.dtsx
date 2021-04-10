@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadDFNB3_uu"
   DTS:PackageType="5"
-  DTS:VersionBuild="124"
-  DTS:VersionGUID="{1032F215-4D6F-43D9-A148-A92863AC144B}">
+  DTS:VersionBuild="136"
+  DTS:VersionGUID="{9DF1FADA-B183-4AE7-A497-7138621FF363}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,6 +28,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-R7O2LSJ.DFNB3 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}"
+      DTS:ObjectName="DESKTOP-R7O2LSJ.DFNB3 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-R7O2LSJ;Initial Catalog=DFNB3;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-R7O2LSJ.EXM1]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
       DTS:DTSID="{84938BFF-5B6C-4C46-BE63-DFEC48E02FB0}"
@@ -35,6 +45,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-R7O2LSJ;Initial Catalog=EXM;Integrated Security=True;Application Name=SSIS-LoadDFNB3_uu-{84938BFF-5B6C-4C46-BE63-DFEC48E02FB0}DESKTOP-R7O2LSJ.EXM1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DFNB.dbo.stg_p1_profile.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{CE509DC7-C382-4008-B5BF-14C896A81A2B}"
+      DTS:ObjectName="DFNB.dbo.stg_p1_profile.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\LDSBC\IT243\repos\DFNB_dw_uu\xml_files\DFNB.dbo.stg_p1_profile.xml" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -4650,7 +4670,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_id"
-              DTS:DTSID="{17AB1392-F03F-4E1E-8EAB-D02FCED11C36}"
+              DTS:DTSID="{4A05C4A5-ABA0-47F0-9C0A-3C487AC187A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4658,7 +4678,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_id"
-              DTS:DTSID="{B62AA567-06EB-41F6-99DF-8D2CBE17587C}"
+              DTS:DTSID="{44A9CE44-E4E8-473F-86D7-9F817EA491F4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4666,7 +4686,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_cust_role_id"
-              DTS:DTSID="{D2F99D3A-FEF9-410F-BEF3-E9C6B45CBB24}"
+              DTS:DTSID="{25DC55D6-BE18-4B2B-AA71-54B7D0915EFE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4674,7 +4694,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_id2"
-              DTS:DTSID="{6D11B0AE-43F7-4AF4-9A80-8434C5919DC7}"
+              DTS:DTSID="{55E9B343-8C87-4B8B-9F43-67DC5C90F9D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4682,7 +4702,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="prod_id"
-              DTS:DTSID="{B8D02AE9-58ED-47D9-A773-BAF8FC4D23A9}"
+              DTS:DTSID="{A027E16A-F95D-4BB6-8EA5-4E9ACB50CC4E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4690,7 +4710,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="open_date"
-              DTS:DTSID="{9C8CA39C-E0BC-4327-82B7-411AE7CA3A31}"
+              DTS:DTSID="{97329708-9AA0-4B78-AEFD-48E2FF3E3A79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4698,7 +4718,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="close_date"
-              DTS:DTSID="{2232AD09-2764-49CF-A088-0F0509919732}"
+              DTS:DTSID="{31C4D81B-4AE3-43D6-9F1B-1F6D66B49BA5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4707,7 +4727,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="open_close_code"
-              DTS:DTSID="{0EA7EC8A-68AF-4992-8E97-4743FFD3C828}"
+              DTS:DTSID="{A1CF824E-9C06-4D94-82AC-96C858C4C73E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4715,7 +4735,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="branch_id"
-              DTS:DTSID="{EBA59F9B-5F2A-4BFD-BDE6-9F720C302FF1}"
+              DTS:DTSID="{973910F6-3D3A-40CA-8D71-C1A76C30FA83}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4723,7 +4743,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_rel_id"
-              DTS:DTSID="{DCA215B5-E29A-4B05-AE5A-91F53FC0BC2B}"
+              DTS:DTSID="{23C181C1-8021-49B1-A879-5064D97FD93B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4731,7 +4751,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="pri_cust_id"
-              DTS:DTSID="{5F0E689E-055D-427C-96FA-ED1DB82C8CC1}"
+              DTS:DTSID="{1BE85F82-39FB-4E45-A87E-95DB757A95EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4741,7 +4761,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="loan_amt"
-              DTS:DTSID="{E13A9521-A7DA-4061-948E-CA3A0B9E8D17}"
+              DTS:DTSID="{BCDABDC0-A0E4-4C18-88DB-B798AF8D0E25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4749,7 +4769,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_id"
-              DTS:DTSID="{A01E27C1-F3FD-4BF0-B8F2-2C5B3A9D6F0B}"
+              DTS:DTSID="{4F24D0B7-76AD-45F9-BC3A-79B38FD363D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4758,7 +4778,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_code"
-              DTS:DTSID="{CB2D22BF-68FB-482A-AC62-FAB4125B56D2}"
+              DTS:DTSID="{B375386B-CFBE-4F48-989E-BE08DF388C0D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4767,7 +4787,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_desc"
-              DTS:DTSID="{1C2AB2D0-BC92-4E5D-A833-11A963539C0C}"
+              DTS:DTSID="{AE49B04A-804A-425B-AFAE-AD8BFDC49C82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4775,7 +4795,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_region_id"
-              DTS:DTSID="{379423AC-C67C-4FD3-8CD8-746B8A2E06F0}"
+              DTS:DTSID="{097A74AA-0F0B-40A2-86F0-86FC38C8CFB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4783,7 +4803,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_area_id"
-              DTS:DTSID="{7FA41323-0235-4A50-B5DE-7492561EE0D6}"
+              DTS:DTSID="{1A7928F9-1C9A-4A48-A7CE-19EB006BB0D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4793,7 +4813,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_lat"
-              DTS:DTSID="{18C88A0D-1D1A-4E6A-B805-D07C9ECAD8F1}"
+              DTS:DTSID="{30D8F9C7-1EE7-4013-BA3C-02EB46B38C9F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4803,7 +4823,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_lon"
-              DTS:DTSID="{33A83AAC-DF59-4F38-ABD6-6A41E63DA752}"
+              DTS:DTSID="{ABB4D130-5230-4427-9A83-97486026F3EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4811,7 +4831,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_add_id"
-              DTS:DTSID="{844F2B7F-CCB9-4018-AFD3-4AA067898FFF}"
+              DTS:DTSID="{EDAE77D3-039B-48BB-8945-2A685B0324C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4821,7 +4841,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_add_lat"
-              DTS:DTSID="{228C4FD1-0AD0-4EFC-8E3B-AEEFFB49219C}"
+              DTS:DTSID="{9E243C19-C8BF-41EA-8C0A-6D22240CEED0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4831,7 +4851,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_add_lon"
-              DTS:DTSID="{A50106CE-F348-4547-9ABC-03AB41D99D09}"
+              DTS:DTSID="{BC7B6271-CF46-475B-9E3F-33B28B13152A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4840,7 +4860,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_branch_add_type"
-              DTS:DTSID="{3FFEB48F-14F8-4F5A-8A9F-F04DC17DFBCD}"
+              DTS:DTSID="{ED1F9183-B881-4DBD-85C4-12B71176C797}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4848,7 +4868,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_id2"
-              DTS:DTSID="{3B6F5FEE-D687-4132-8098-0602973F5DA8}"
+              DTS:DTSID="{E5561515-4065-426C-B2CF-C46622D0237A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4857,7 +4877,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="last_name"
-              DTS:DTSID="{995D8D06-EE9C-400B-A732-D427C68298DA}"
+              DTS:DTSID="{8CBF6B4C-1BFA-4EB9-B8E8-76A9FCF5B3AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4866,7 +4886,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="first_name"
-              DTS:DTSID="{702C30B9-3C00-44CA-9124-AB134F4DA589}"
+              DTS:DTSID="{A1736CE2-4FB5-4515-BC89-58C0BD110A84}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4875,7 +4895,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{C36A01AB-8E44-47A8-94A5-8EB4890DF3C8}"
+              DTS:DTSID="{F0232F56-BD25-4149-9D5E-CE40E73D2C8D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4883,7 +4903,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="birth_date"
-              DTS:DTSID="{F5E34250-B4F4-4300-A08D-4D5A1467ECBC}"
+              DTS:DTSID="{F1490427-69BB-49E0-865F-147319EC734B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4891,7 +4911,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_since_date"
-              DTS:DTSID="{9F3B3A2B-9313-445E-8CF0-875ABE5C7CDF}"
+              DTS:DTSID="{5CAE32FA-BFD5-41D6-A7C8-1BD0FC343154}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4899,7 +4919,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="pri_branch_id"
-              DTS:DTSID="{4821BD3A-1EB9-4D23-BE74-D9066E32811B}"
+              DTS:DTSID="{50A5E019-1061-4DE5-94F3-4C325BA026FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4909,7 +4929,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_pri_branch_dist"
-              DTS:DTSID="{1831B7DD-466C-4937-B02E-C54CE66260F4}"
+              DTS:DTSID="{C572DF94-E0CE-4B2E-821A-EC12B8EA77E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4919,7 +4939,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_lat"
-              DTS:DTSID="{2BF3586C-E4FB-4183-B66D-E5C4DF4B5E18}"
+              DTS:DTSID="{232613D5-147C-4F0A-ADBC-707A2D976117}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4929,7 +4949,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_lon"
-              DTS:DTSID="{EC11E4F3-3082-4A18-BE63-DBDA8B956CE5}"
+              DTS:DTSID="{7AF918C6-B029-4F2F-BFFD-2C135E99E6E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4937,7 +4957,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_rel_id"
-              DTS:DTSID="{2407D729-6CDA-4533-9E9B-FB885EF02930}"
+              DTS:DTSID="{A7FC532D-8D65-4B43-BD7B-ED738D2E217E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4945,7 +4965,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_add_id"
-              DTS:DTSID="{B2980819-B426-4F2E-901B-791FAF876397}"
+              DTS:DTSID="{9D5ED0B3-C928-480A-B222-A85E095AA70D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4955,7 +4975,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_add_lat"
-              DTS:DTSID="{405DEFA9-5343-4173-8126-013B132178D5}"
+              DTS:DTSID="{86E35B40-1F92-428F-817C-30A39B73EEA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4965,7 +4985,7 @@
               DTS:DataScale="12"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_add_lon"
-              DTS:DTSID="{9A484335-6EB9-4AC1-B0F8-62335E0EB6D2}"
+              DTS:DTSID="{A9BE211F-3920-487E-AF74-1722FB26F7B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4974,7 +4994,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cust_add_type"
-              DTS:DTSID="{3E69A9A9-A47A-4F6B-8716-F8B36E75C096}"
+              DTS:DTSID="{973A6647-BBD7-4BE3-BBFE-1B333BF2A12E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4982,7 +5002,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="as_of_date"
-              DTS:DTSID="{F846E2B4-8E2B-4D59-A703-43F50483264D}"
+              DTS:DTSID="{83D66DBF-19B7-4B57-8AFC-A93F217E9E93}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -4990,7 +5010,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="acct_id3"
-              DTS:DTSID="{B24CA9D9-7675-4CD9-BC84-EB191EDD297F}"
+              DTS:DTSID="{F4CAC8AC-259F-4CCF-94D0-68E84838628A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -5000,7 +5020,7 @@
               DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="cur_bal"
-              DTS:DTSID="{849EA085-0D6F-4D7A-A2AD-62ACBA6795C4}"
+              DTS:DTSID="{ACBCC2A7-4C7E-4056-9109-51835E31A392}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -5824,17 +5844,16 @@ End Namespace]]></ProjectItem>
           DTS:refId="Package\Parent Container\Data Profiling Task"
           DTS:CreationName="Microsoft.DataProfilingTask"
           DTS:Description="Data Profiling Task"
-          DTS:Disabled="True"
-          DTS:DTSID="{639F85C8-26F9-4CAC-80AE-6D5585ADDFE1}"
+          DTS:DTSID="{A8F46CA7-F012-4B12-8EA0-E9C96EAD93A5}"
           DTS:ExecutableType="Microsoft.DataProfilingTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Profiling Task"
           DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <DataProfilingTaskData
-              Destination="stg_p1_b1.txt 1"
+              Destination="DFNB.dbo.stg_p1_profile.xml"
               OverwriteDestination="True">
               <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
 <DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
@@ -5845,31 +5864,31 @@ End Namespace]]></ProjectItem>
     <Timeout>0</Timeout>
     <Requests>
       <ColumnNullRatioProfileRequest ID="NullRatioReq">
-        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <DataSourceID>{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}</DataSourceID>
         <Table Schema="dbo" Table="stg_p1" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq">
-        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <DataSourceID>{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}</DataSourceID>
         <Table Schema="dbo" Table="stg_p1" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
-        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <DataSourceID>{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}</DataSourceID>
         <Table Schema="dbo" Table="stg_p1" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq">
-        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <DataSourceID>{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}</DataSourceID>
         <Table Schema="dbo" Table="stg_p1" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq">
-        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <DataSourceID>{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}</DataSourceID>
         <Table Schema="dbo" Table="stg_p1" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -5880,6 +5899,100 @@ End Namespace]]></ProjectItem>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{6262EA12-9F9E-469A-9DAD-7D6B32B54EF7}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq1">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq2">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq2">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq2">
+        <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq2">
         <DataSourceID>{B97C05B0-034F-4215-82CF-4EBA8AA7BEC2}</DataSourceID>
         <Table Schema="dbo" Table="stg_p1" />
         <DeterminantColumns>
@@ -5910,7 +6023,7 @@ End Namespace]]></ProjectItem>
           DTS:LocaleID="-1"
           DTS:ObjectName="Load Nums"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5922,6 +6035,7 @@ End Namespace]]></ProjectItem>
           DTS:refId="Package\Parent Container\LoadNAICSCodeHierDim"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
+          DTS:Disabled="True"
           DTS:DTSID="{11F32D07-2C7B-4F76-92E7-ED3E43FF41D2}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
@@ -6188,7 +6302,7 @@ End Namespace]]></ProjectItem>
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate Nums"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -6472,7 +6586,7 @@ End Namespace]]></ProjectItem>
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate Nums"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -6518,9 +6632,9 @@ End Namespace]]></ProjectItem>
                 <DTS:ObjectData>
                   <ForEachFileEnumeratorProperties>
                     <FEFEProperty
-                      Folder="C:\C:\LDSBC\IT243\repos\DFNB_src\txt_files" />
+                      Folder="C:\LDSBC\IT243\repos\DFNB_src\txt_files" />
                     <FEFEProperty
-                      FileSpec="stg_p1_b.txt*" />
+                      FileSpec="stg_p1_b*.txt" />
                     <FEFEProperty
                       FileNameRetrievalType="0" />
                     <FEFEProperty
@@ -8273,8 +8387,8 @@ End Namespace]]></ProjectItem>
               <DTS:ForEachVariableMappings>
                 <DTS:ForEachVariableMapping
                   DTS:CreationName=""
-                  DTS:DTSID="{86BEC3BB-B4E3-44A7-9B96-71069374742D}"
-                  DTS:ObjectName="{86BEC3BB-B4E3-44A7-9B96-71069374742D}"
+                  DTS:DTSID="{710B56E9-C622-4F24-A905-A9EB32029948}"
+                  DTS:ObjectName="{710B56E9-C622-4F24-A905-A9EB32029948}"
                   DTS:ValueIndex="0"
                   DTS:VariableName="User::v_ConnectString" />
               </DTS:ForEachVariableMappings>
@@ -30269,7 +30383,7 @@ End Namespace]]></ProjectItem>
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate data"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -30331,6 +30445,14 @@ End Namespace]]></ProjectItem>
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
           DTS:To="Package\Parent Container\LoadNAICSCodeHierDim" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Parent Container.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{6EC17DFD-E008-4FBA-925E-7A9322AB5111}"
+          DTS:From="Package\Parent Container\Reload raw data Flat File"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\Parent Container\Data Profiling Task" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -31326,19 +31448,23 @@ End Namespace]]></ProjectItem>
           PanelSize="602.666666666667,345.333333333334"
           Size="174,42.6666666666667"
           Id="Package\Documentation"
-          TopLeft="5.50000000000017,931.5" />
+          TopLeft="5.50000000000017,1240.83333333333" />
         <NodeLayout
           Size="189.333333333334,42.6666666666667"
           Id="Package\MsgBox check variable"
-          TopLeft="239.833333333333,931.5" />
+          TopLeft="239.833333333333,1240.83333333333" />
         <NodeLayout
           Size="169.333333333334,42.6666666666667"
           Id="Package\Parent Container\Data Profiling Task"
-          TopLeft="5.50000000000001,519.833333333333" />
+          TopLeft="439.874991180376,132.789468880505" />
         <NodeLayout
           Size="134,42"
           Id="Package\Parent Container\Load Nums"
-          TopLeft="252.166666666667,314.5" />
+          TopLeft="246.5,469.166666666667" />
+        <NodeLayout
+          Size="200.666666666667,42.6666666666667"
+          Id="Package\Parent Container\LoadNAICSCodeHierDim"
+          TopLeft="524.166666666667,829.166666666667" />
         <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\Parent Container\Reload Nums - ADO\Reload from EM"
@@ -31375,7 +31501,7 @@ End Namespace]]></ProjectItem>
           PanelSize="166.666666666667,206"
           Size="166.666666666667,248.666666666667"
           Id="Package\Parent Container\Reload Nums - ADO"
-          TopLeft="235.833333333333,5.49999999999993" />
+          TopLeft="230.166666666667,5.49999999999993" />
         <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\Parent Container\Reload Nums - OLE_DB\Reload from EM"
@@ -31412,7 +31538,7 @@ End Namespace]]></ProjectItem>
           PanelSize="166.666666666667,206"
           Size="166.666666666667,248.666666666667"
           Id="Package\Parent Container\Reload Nums - OLE_DB"
-          TopLeft="235.833333333333,416.833333333333" />
+          TopLeft="230.166666666667,726.166666666667" />
         <NodeLayout
           Size="153.333333333334,42.6666666666667"
           Id="Package\Parent Container\Reload raw data Flat File\Foreach Loop Container\Data Flow Task"
@@ -31506,77 +31632,107 @@ End Namespace]]></ProjectItem>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="366,310"
-          Size="219.333333333334,42.6666666666667"
+          IsExpanded="True"
+          PanelSize="366,354.666666666667"
+          Size="366,397.333333333334"
           Id="Package\Parent Container\Reload raw data Flat File"
-          TopLeft="453.5,314.166666666667" />
+          TopLeft="441.5,314.166666666667" />
         <EdgeLayout
           Id="Package\Parent Container.PrecedenceConstraints[Constraint]"
-          TopLeft="319.166666666667,356.5">
+          TopLeft="313.5,511.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,60.3333333333334"
+              EndConnector="0,215"
               Start="0,0"
-              End="0,52.8333333333334">
+              End="0,207.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.8333333333334" />
+                    End="0,207.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,18.4166666666667,16,16"
+              BoundingBox="-8,95.75,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Parent Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="319.166666666667,254.166666666667">
+          TopLeft="313.5,254.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,60.3333333333333"
+              EndConnector="0,215"
               Start="0,0"
-              End="0,52.8333333333333">
+              End="0,207.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.8333333333333" />
+                    End="0,207.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,18.4166666666667,16,16"
+              BoundingBox="-8,95.75,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="200.666666666667,42.6666666666667"
-          Id="Package\Parent Container\LoadNAICSCodeHierDim"
-          TopLeft="462.833333333333,519.833333333333" />
         <EdgeLayout
           Id="Package\Parent Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="563.166666666667,356.833333333333">
+          TopLeft="624.5,711.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,163"
+              EndConnector="0,117.666666666667"
               Start="0,0"
-              End="0,155.5">
+              End="0,110.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,155.5" />
+                    End="0,110.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parent Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="624.5,314.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="-99.9583421529572,-138.710531119495"
+              Start="0,0"
+              End="-99.9583421529572,-131.210531119495">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-65.3552655597477" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-65.3552655597477"
+                    Point2="0,-69.3552655597477"
+                    Point3="-4,-69.3552655597477" />
+                  <mssgle:LineSegment
+                    End="-95.9583421529572,-69.3552655597477" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-95.9583421529572,-69.3552655597477"
+                    Point2="-99.9583421529572,-69.3552655597477"
+                    Point3="-99.9583421529572,-73.3552655597477" />
+                  <mssgle:LineSegment
+                    End="-99.9583421529572,-131.210531119495" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -31588,14 +31744,14 @@ End Namespace]]></ProjectItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="678,720.666666666667"
-          Size="678,763.333333333334"
+          PanelSize="813.333333333334,1030"
+          Size="813.333333333334,1073.33333333334"
           Id="Package\Parent Container"
-          TopLeft="240.5,108.166666666667" />
+          TopLeft="172.833333333333,108.166666666667" />
         <NodeLayout
           Size="178.666666666667,42.6666666666667"
           Id="Package\SQL logPackageEnd"
-          TopLeft="490.166666666667,931.5" />
+          TopLeft="490.166666666667,1240.83333333333" />
         <NodeLayout
           Size="185.333333333334,42.6666666666667"
           Id="Package\SQL LogPackageStart"
@@ -31606,14 +31762,14 @@ End Namespace]]></ProjectItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,60"
+              EndConnector="0,60.0000000000004"
               Start="0,0"
-              End="0,52.5">
+              End="0,52.5000000000004">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,52.5000000000004" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -31624,18 +31780,18 @@ End Namespace]]></ProjectItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="579.5,871.5">
+          TopLeft="579.5,1181.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,60"
+              EndConnector="0,59.3333333333298"
               Start="0,0"
-              End="0,52.5">
+              End="0,51.8333333333298">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,51.8333333333298" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -31841,7 +31997,7 @@ End Namespace]]></ProjectItem>
     design-time-name="Package\Parent Container\Reload raw data Flat File\Foreach Loop Container\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="148,42.6666666666667"
           Id="Package\Parent Container\Reload raw data Flat File\Foreach Loop Container\Data Flow Task\stg_p1_bN_txt"
@@ -31869,9 +32025,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -31894,7 +32048,7 @@ End Namespace]]></ProjectItem>
     design-time-name="Package\Parent Container\Reload raw data Flat File\Load Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="129.333333333334,42.6666666666667"
           Id="Package\Parent Container\Reload raw data Flat File\Load Data\stg_p2_txt"
@@ -31978,9 +32132,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32014,9 +32166,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32050,9 +32200,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32086,9 +32234,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32122,9 +32268,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32158,9 +32302,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32182,9 +32324,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32218,9 +32358,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32254,9 +32392,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32290,9 +32426,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32326,9 +32460,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32362,9 +32494,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32398,9 +32528,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32422,9 +32550,7 @@ End Namespace]]></ProjectItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
